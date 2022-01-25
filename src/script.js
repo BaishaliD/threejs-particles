@@ -4,7 +4,7 @@ import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 import * as dat from "dat.gui";
 
 // Debug
-const gui = new dat.GUI();
+// const gui = new dat.GUI();
 
 // Canvas
 const canvas = document.getElementById("three-canvas");
@@ -13,7 +13,7 @@ const canvas = document.getElementById("three-canvas");
 const scene = new THREE.Scene();
 
 // Objects
-const geometry = new THREE.SphereGeometry(0.5, 64, 64);
+const geometry = new THREE.SphereGeometry(0.7, 64, 64);
 
 //Texture
 const textureLoader = new THREE.TextureLoader();
@@ -22,7 +22,7 @@ const image = textureLoader.load("textures/world.jpg");
 
 // Materials
 const material = new THREE.MeshStandardMaterial({
-  color: "white",
+  color: "gray",
   metalness: 0.75,
   roughness: 0.75,
   normalMap: texture,
@@ -100,14 +100,14 @@ scene.add(pointLight3);
  * Responsiveness on window resize
  */
 const sizes = {
-  width: window.innerWidth,
-  height: window.innerHeight,
+  width: canvas.clientWidth,
+  height: canvas.clientHeight,
 };
 
 window.addEventListener("resize", () => {
   // Update sizes
-  sizes.width = window.innerWidth;
-  sizes.height = window.innerHeight;
+  sizes.width = canvas.clientWidth;
+  sizes.height = canvas.clientHeight;
 
   // Update camera
   camera.aspect = sizes.width / sizes.height;

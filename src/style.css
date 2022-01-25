@@ -8,8 +8,26 @@ body {
   
 }
 
-section{
+#container{
+  color: white;
+  background-color: #090a0b;
   height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+}
+
+#title{
+  width: 40%;
+  padding-left: 10%;
+}
+
+h1{
+  font-size: 3.5rem;
+  font-family: monospace;
+  opacity: 0.3;
+  text-transform: uppercase;
 }
 
 #three-canvas {
@@ -17,5 +35,7 @@ section{
   top: 0;
   left: 0;
   outline: none; */
-  background-color: #090a0b;
+  height: 100vh !important;
+  width: 60% !important;
+  mix-blend-mode: exclusion;
 }
