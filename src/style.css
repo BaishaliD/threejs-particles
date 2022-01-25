@@ -5,14 +5,17 @@
 
 html,
 body {
-  height: 100vh;
-  font-family: "Poppins";
+  
 }
 
-.webgl {
-  position: fixed;
+section{
+  height: 100vh;
+}
+
+#three-canvas {
+  /* position: absolute;
   top: 0;
   left: 0;
-  outline: none;
-  background-color: #1f1e1e;
+  outline: none; */
+  background-color: #090a0b;
 }
