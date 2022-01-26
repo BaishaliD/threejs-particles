@@ -1,10 +1,11 @@
 {
   "repository": "#",
-  "homepage": "https://baishalid.github.io/threejs-tutorial-1",
+  "homepage": "https://baishalid.github.io/feel-the-sphere",
   "license": "UNLICENSED",
   "scripts": {
     "build": "webpack --config ./bundler/webpack.prod.js",
     "dev": "webpack serve --config ./bundler/webpack.dev.js",
+    "predeploy": "webpack --config ./bundler/webpack.prod.js",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
