@@ -166,11 +166,9 @@ const onMouseMove = (event) => {
 }
 
 const onScroll = (event) => {
-  console.log("Sphere rad ::", sphere.scale.x);
-  console.log("scroll position ::", (sizes.height/2 - window.scrollY) * 0.001);
-  sphere.scale.x = 1 + (sizes.height/2 - window.scrollY) * 0.0001;
-  sphere.scale.y = 1 + (sizes.height/2 - window.scrollY) * 0.0001;
-  sphere.scale.z = 1 + (sizes.height/2 - window.scrollY) * 0.0001;
+  // sphere.scale.x = 1 + (sizes.height/2 - window.scrollY) * 0.0001;
+  // sphere.scale.y = 1 + (sizes.height/2 - window.scrollY) * 0.0001;
+  // sphere.scale.z = 1 + (sizes.height/2 - window.scrollY) * 0.0001;
 }
 
 const clock = new THREE.Clock();
@@ -193,7 +191,7 @@ const tick = () => {
   
   sphere.rotation.x += 0.5*(targetY - sphere.rotation.x);
   sphere.rotation.y += 0.05*(targetX - sphere.rotation.y);
-  sphere.rotation.z -= 0.05*(targetY - sphere.rotation.x);
+  sphere.position.z += -0.5*(targetY - sphere.rotation.x);
 
   // Update Orbital Controls
   // controls.update()
