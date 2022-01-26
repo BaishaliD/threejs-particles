@@ -1,5 +1,6 @@
 {
   "repository": "#",
+  "homepage": "https://baishalid.github.io/threejs-tutorial-1",
   "license": "UNLICENSED",
   "scripts": {
     "build": "webpack --config ./bundler/webpack.prod.js",
