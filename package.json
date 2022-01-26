@@ -1,6 +1,6 @@
 {
   "repository": "#",
-  "homepage": "https://baishalid.github.io/feel-the-sphere",
+  "homepage": "https://baishalid.github.io/threejs-particles",
   "license": "UNLICENSED",
   "scripts": {
     "build": "webpack --config ./bundler/webpack.prod.js",
